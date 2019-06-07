@@ -238,15 +238,6 @@ g.set_xticklabels(g.get_xticklabels(),rotation=40,ha='right')
 plt.title("Installs--Size",size=20)
 
 
-# In[137]:
-
-
-plt.figure(figsize=(10,10))
-g = sns.lineplot(x='Reviews',y='Installs',data=googleapp,color='red')
-plt.xscale('log')
-plt.yscale('log')
-
-
 # 从这个可视化可以看出随着Installs的增加，Size也会随之增加，这是因为只有那些足够美观的app，功能全面的app才更受欢迎，而如果要想设计出足够美观和功能全面的app的话，那么软件的Size就一定大，换句话说，如果软件要想受欢迎，那么一定要足够美观和功能全面
 
 # 观察Content Rating
@@ -342,6 +333,8 @@ g.set(xlim=(0,10))
 
 
 # app大多都是免费的，只有少数是收费的，且价格不贵；下载量基本遵循价格的增加而下降，所以这里就明白了，如果打算收费，则应该将app定价到1以下为最好
+
+# 下面通过分析app name来统计出哪些单词出现的频率更高
 
 # In[156]:
 
